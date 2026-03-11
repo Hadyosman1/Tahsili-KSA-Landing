@@ -3,8 +3,8 @@
 import { motion, useInView } from "motion/react";
 import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
-import { Card, CardContent, CardDescription, CardTitle } from "../ui/card";
 import { BlurIn } from "../motion-wrappers";
+import { Card, CardContent, CardDescription, CardTitle } from "../ui/card";
 
 const AnimatedCounter = ({
   value,
@@ -40,7 +40,7 @@ const AnimatedCounter = ({
   return (
     <span
       ref={ref}
-      className="bg-primary/10 grid aspect-square w-20 place-items-center rounded-full p-2"
+      className="bg-brand-gray/5 grid aspect-square w-20 place-items-center rounded-full p-2"
     >
       {Math.round(displayValue)}
       {suffix}
@@ -57,9 +57,9 @@ const Statistics = () => {
 
   return (
     <section>
-      <div className="container space-y-10 py-16">
+      <div className="container space-y-10 py-10">
         <BlurIn delay={0.1}>
-          <h2 className="text-primary mx-auto text-center text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
+          <h2 className="text-brand-dark-blue mx-auto text-center text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
             {t("title")}
           </h2>
         </BlurIn>
@@ -74,15 +74,15 @@ const Statistics = () => {
               viewport={{ once: true }}
             >
               <Card className="relative rounded-md shadow-2xl transition-transform duration-200 hover:translate-y-1">
-                <div className="bg-primary absolute inset-s-0 top-0 h-full w-1" />
-                <CardContent className="flex items-center gap-1">
-                  <CardTitle className="text-primary mb-2 font-bold md:text-lg">
+                <div className="from-brand-light-blue via-brand-green to-brand-light-blue absolute inset-s-0 top-0 h-full w-1 bg-linear-to-b" />
+                <CardContent className="flex items-center gap-2.5">
+                  <CardTitle className="text-brand-green mb-2 font-bold md:text-lg">
                     <AnimatedCounter
                       value={item.value.num}
                       suffix={item.value.suffix}
                     />
                   </CardTitle>
-                  <CardDescription className="text-base font-semibold md:text-lg">
+                  <CardDescription className="text-brand-gray text-base font-semibold md:text-lg">
                     {item.label}
                   </CardDescription>
                 </CardContent>

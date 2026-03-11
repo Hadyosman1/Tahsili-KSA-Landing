@@ -66,7 +66,7 @@ const LeadForm = () => {
   return (
     <section
       id="lead-form-section"
-      className="bg-linear-to-tr from-emerald-500 to-emerald-900"
+      className="bg-linear-to-br from-brand-dark-blue via-brand-dark-blue to-brand-green"
     >
       <div className="container flex min-h-[70vh] flex-col items-center justify-center space-y-8 py-14">
         <BlurIn delay={0.1} className="space-y-6">

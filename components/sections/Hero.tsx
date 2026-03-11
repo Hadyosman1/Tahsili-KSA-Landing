@@ -36,7 +36,7 @@ const Hero = ({
   };
 
   return (
-    <section className="relative grid min-h-[80vh] py-24">
+    <section className="relative grid min-h-[75vh] py-24">
       <Image
         src={heroPic}
         alt="Cover"
@@ -46,12 +46,12 @@ const Hero = ({
         sizes="100vw"
         className="z-[-2] object-cover"
       />
-      <div className="absolute inset-0 z-[-1] bg-linear-to-t from-emerald-800 via-emerald-900 to-emerald-950 opacity-60" />
+      <div className="to-brand-dark-blue via-brand-light-blue from-brand-green/60 absolute inset-0 z-[-1] bg-linear-to-b opacity-50" />
       <div className="container grid items-center">
         <div>
           <div className="text-background mx-auto max-w-4xl text-center text-balance">
             <FadeUp delay={0.1}>
-              <Badge className="bg-primary/20 outline-primary mx-auto mb-4 flex h-auto px-4 py-1 text-sm leading-9 outline-2 md:text-base">
+              <Badge className="bg-brand-green/20 outline-brand-green mx-auto mb-4 flex h-auto px-2 py-0.5 text-sm leading-9 outline-2 md:text-base">
                 {badge}
               </Badge>
             </FadeUp>
@@ -71,8 +71,9 @@ const Hero = ({
               <Button
                 onClick={navigateToLeadForm}
                 size={"lg"}
+                variant="secondary"
                 className={
-                  "h-12 max-w-64 grow rounded-full text-lg font-semibold"
+                  "text-brand-white bg-brand-green hover:bg-brand-green/90  h-12 max-w-64 grow rounded-full text-lg font-semibold"
                 }
               >
                 {ctaText}
@@ -81,10 +82,9 @@ const Hero = ({
 
               <Button
                 onClick={handleNavigateSecondaryCTA}
-                variant="secondary"
                 size={"lg"}
                 className={
-                  "h-12 max-w-64 grow rounded-full text-lg font-semibold"
+                  "bg-brand-light-blue hover:bg-brand-light-blue/90 h-12 max-w-64 grow rounded-full text-lg font-semibold"
                 }
               >
                 {secondaryCtaText}
@@ -99,12 +99,12 @@ const Hero = ({
                 {features.map((feature, index) => (
                   <li
                     key={index}
-                    className="text-background flex items-center gap-0.25 text-xs md:text-sm lg:text-base"
+                    className="text-brand-white flex items-center gap-0.25 text-xs md:text-sm lg:text-base"
                   >
                     <HugeiconsIcon
                       icon={Tick02Icon}
                       size="24"
-                      className="text-green-400"
+                      className="text-green-500"
                     />
                     {feature}
                   </li>

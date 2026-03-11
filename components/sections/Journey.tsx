@@ -62,17 +62,19 @@ const Journey = () => {
           }}
         />
 
-        <div className="container space-y-6 py-16">
+        <div className="container space-y-6 py-10">
           <BlurIn delay={0.1}>
             <div className="space-y-3">
-              <h2 className="text-primary mx-auto text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
+              <h2 className="text-brand-dark-blue mx-auto text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
                 {t("title")}
               </h2>
-              <p className="text-muted-foreground text-lg leading-8">
+              <p className="text-brand-gray text-lg leading-8">
                 {t("description")}
               </p>
 
-              <p className="text-lg leading-8">{t("beforeSteps")}</p>
+              <p className="text-brand-gray text-lg leading-7">
+                {t("beforeSteps")}
+              </p>
             </div>
           </BlurIn>
 

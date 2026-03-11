@@ -35,12 +35,12 @@ const Curriculum = () => {
 
   return (
     <section id="curriculum">
-      <div className="container space-y-10 py-16">
-        <BlurIn delay={0.1} className="space-y-7">
-          <h2 className="text-primary mx-auto text-center text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
+      <div className="container space-y-10 py-10">
+        <BlurIn delay={0.1} className="space-y-5">
+          <h2 className="text-brand-dark-blue mx-auto text-center text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
             {t("title")}
           </h2>
-          <p className="text-muted-foreground mx-auto max-w-2xl text-center text-lg font-semibold md:text-lg lg:text-xl">
+          <p className="text-brand-gray mx-auto max-w-2xl text-center text-lg font-semibold md:text-lg lg:text-xl">
             {t("description")}
           </p>
         </BlurIn>
@@ -52,13 +52,13 @@ const Curriculum = () => {
         >
           {items.map((item, idx) => (
             <StaggerItem key={idx} variant="fadeUp" className="grid">
-              <Card className="group relative transition-all duration-200 hover:-translate-1">
-                <div className="bg-primary absolute bottom-0 left-0 h-1 w-full" />
+              <Card className="group relative transition-all duration-200 shadow-2xl hover:-translate-1">
+                <div className="from-brand-light-blue via-green-600 to-brand-light-blue bg-linear-to-r absolute bottom-0 left-0 h-1 w-full" />
                 <CardContent>
                   <CardHeader className="mb-3">
                     <div
                       className={cn(
-                        "bg-secondary text-primary mx-auto mb-2 grid w-fit place-items-center rounded-2xl p-2",
+                        "bg-brand-light-blue/5 text-brand-light-blue mx-auto mb-2 grid w-fit place-items-center rounded-2xl p-2",
                       )}
                     >
                       <HugeiconsIcon
@@ -67,11 +67,11 @@ const Curriculum = () => {
                         className="transition-all duration-400 group-hover:rotate-360"
                       />
                     </div>
-                    <CardTitle className="text-center font-bold">
+                    <CardTitle className="text-center text-brand-dark-blue font-bold">
                       {item.title}
                     </CardTitle>
                   </CardHeader>
-                  <CardDescription className="text-center leading-7 font-semibold md:text-base">
+                  <CardDescription className="text-center leading-7 text-brand-gray font-semibold md:text-base">
                     {item.description}
                   </CardDescription>
                 </CardContent>

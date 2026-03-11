@@ -1,4 +1,4 @@
-import logo from "@/public/logo.png";
+import logo from "@/public/footer-logo.png";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
@@ -6,7 +6,7 @@ const Footer = () => {
   const t = useTranslations("Footer");
 
   return (
-    <footer className=" border-t">
+    <footer className="bg-brand-dark-blue text-brand-white border-t">
       <div className="container py-10">
         <Image
           src={logo}
@@ -14,11 +14,12 @@ const Footer = () => {
           width={150}
           height={150}
           placeholder="blur"
+          className="bg-brand-white mb-4 rounded-full"
         />
 
         <p className="leading-8 text-pretty">{t("description")}</p>
 
-        <p className="text-primary mt-6 text-center">
+        <p className="text-brand-green mt-6 text-center">
           {t("copyright")} &copy; {new Date().getFullYear()}
         </p>
       </div>

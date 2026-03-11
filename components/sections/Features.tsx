@@ -1,9 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import Image from "next/image";
-
-import featuresPic from "@/public/features.webp";
+import { cn } from "@/lib/utils";
 import {
   ComputerVideoIcon,
   CreditCardValidationIcon,
@@ -12,10 +9,13 @@ import {
   UserGroupIcon,
   UserShield01Icon,
 } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { BlurIn, StaggerItem, StaggerList } from "../motion-wrappers";
 import { Card, CardContent, CardDescription, CardTitle } from "../ui/card";
-import { cn } from "@/lib/utils";
-import { HugeiconsIcon } from "@hugeicons/react";
+
+import featuresPic from "@/public/features.webp";
 
 const iconsMap = [
   LaptopVideoIcon,
@@ -32,11 +32,11 @@ const Features = () => {
 
   return (
     <section>
-      <div className="container py-16">
+      <div className="container py-10">
         <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-3 lg:gap-8">
           <div className="space-y-10 lg:col-span-2">
             <BlurIn delay={0.1}>
-              <h2 className="text-primary mx-auto text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
+              <h2 className="text-brand-dark-blue mx-auto text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
                 {t("title")}
               </h2>
             </BlurIn>
@@ -48,12 +48,12 @@ const Features = () => {
             >
               {features.map((feature, idx) => (
                 <StaggerItem key={idx} variant="fadeUp" className="grid">
-                  <Card className="group hover:border-primary relative rounded-md border transition-all duration-300 hover:-translate-y-1">
-                    <div className="bg-primary/50 absolute -inset-e-5 -top-5 size-15 rounded-full" />
+                  <Card className="group hover:border-brand-light-blue relative rounded-md transition-all duration-300 hover:-translate-y-1">
+                    <div className="from-brand-light-blue to-brand-light-blue absolute inset-s-0 top-0 h-full w-1 bg-linear-to-b via-green-600" />
                     <CardContent className="flex items-center gap-2 px-3.5">
                       <div
                         className={cn(
-                          "bg-secondary text-primary grid w-fit shrink-0 place-items-center self-start rounded-2xl p-2",
+                          "from-brand-light-blue/40 text-brand-light-blue grid w-fit shrink-0 place-items-center self-start rounded-2xl bg-linear-to-tr to-green-500/20 p-2",
                         )}
                       >
                         <HugeiconsIcon
@@ -64,10 +64,10 @@ const Features = () => {
                       </div>
 
                       <div>
-                        <CardTitle className="text-primary font-bold">
+                        <CardTitle className="text-brand-dark-blue font-bold">
                           {feature.title}
                         </CardTitle>
-                        <CardDescription className="leading-7 font-semibold md:text-base">
+                        <CardDescription className="text-brand-gray leading-7 font-semibold md:text-base">
                           {feature.subtitle}
                         </CardDescription>
                       </div>
@@ -90,7 +90,7 @@ const Features = () => {
               alt="Features"
               className="w-full shadow-2xl transition-all duration-300 group-hover:scale-115 group-hover:rotate-5"
             />
-            <div className="to-primary/40 absolute inset-0 bg-linear-to-b from-transparent" />
+            <div className="to-brand-light-blue/40 absolute inset-0 bg-linear-to-b from-transparent" />
           </BlurIn>
         </div>
       </div>
