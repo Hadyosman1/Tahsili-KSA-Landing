@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
 
 // السماح فقط من نفس الدومين
 $allowedOrigins = [
-  "https://prep.elmway.sa"
+  "https://prep.elmway.sa",
 ];
 
 $origin = $_SERVER["HTTP_ORIGIN"] ?? "";
@@ -31,9 +31,10 @@ if (!$data) {
 }
 
 // تنظيف البيانات
-$name = trim($data["fullName"] ?? "");
+$name = trim($data["fullname"] ?? "");
 $phone = trim($data["phone"] ?? "");
 $email = trim($data["email"] ?? "");
+$source = trim($data["source"] ?? "Lead Form");
 
 // validation
 if (strlen($name) < 2) {
@@ -73,9 +74,10 @@ file_put_contents($file, time());
 
 // إعداد الإيميل
 $to = "hady.osman.dev@gmail.com";
-$subject = "New Lead - Elmway Website";
 
-$message = "Website Lead\n\n";
+$subject = "New Lead - " . $source;
+
+$message .= "Source: $source\n";
 $message .= "Name: $name\n";
 $message .= "Phone: $phone\n";
 $message .= "Email: $email\n";
@@ -93,6 +95,12 @@ $headers[] = "Content-Type: text/plain; charset=UTF-8";
 
 $success = mail($to, $subject, $message, implode("\r\n", $headers));
 
-echo json_encode([
-  "success" => $success
-]);
+if ($success) {
+  echo json_encode(["success" => true]);
+} else {
+  // إذا البريد الإلكتروني لم يُرسل، نرجع كود خطأ محدد
+  echo json_encode([
+    "success" => false,
+    "error" => "email_failed"
+  ]);
+}

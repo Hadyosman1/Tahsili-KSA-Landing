@@ -1,11 +1,17 @@
 "use client";
 
+import { ERROR_CODES, sendLead } from "@/services/sendLead";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { LoaderPinwheelIcon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import { Locale, useLocale, useTranslations } from "next-intl";
+import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { isValidPhoneNumber } from "react-phone-number-input";
+import { toast } from "sonner";
 import z from "zod";
 import { BlurIn, FadeUp } from "../motion-wrappers";
+import { SuccessDialog } from "../success-dialog";
 import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import { Field, FieldError, FieldGroup, FieldLabel } from "../ui/field";
@@ -46,6 +52,7 @@ const getFormSchema = (locale: Locale) =>
 const LeadForm = () => {
   const t = useTranslations("LeadForm");
   const locale = useLocale();
+  const [showSuccessDialog, setShowSuccessDialog] = useState(false);
 
   const formSchema = getFormSchema(locale);
   type FormValues = z.infer<typeof formSchema>;
@@ -59,14 +66,31 @@ const LeadForm = () => {
     },
   });
 
-  const onSubmit = (data: FormValues) => {
-    console.log(data);
+  const onSubmit = async (data: FormValues) => {
+    const result = await sendLead({
+      fullname: data.fullName,
+      phone: data.phone,
+      email: data.email || undefined,
+    });
+
+    if (!result.success) {
+      toast.error(
+        ERROR_CODES[result.errorCode as keyof typeof ERROR_CODES][
+          locale === "ar" ? "ar" : "en"
+        ],
+      );
+    } else {
+      // Reset form
+      form.reset();
+      // Show success dialog
+      setShowSuccessDialog(true);
+    }
   };
 
   return (
     <section
       id="lead-form-section"
-      className="bg-linear-to-br from-brand-dark-blue via-brand-dark-blue to-brand-green"
+      className="from-brand-dark-blue via-brand-dark-blue to-brand-green bg-linear-to-br"
     >
       <div className="container flex min-h-[70vh] flex-col items-center justify-center space-y-8 py-14">
         <BlurIn delay={0.1} className="space-y-6">
@@ -156,7 +180,18 @@ const LeadForm = () => {
 
                   <p>{t("form.footer")}</p>
 
-                  <Button type="submit" className={"w-fit"} size={"lg"}>
+                  <Button
+                    disabled={form.formState.isSubmitting}
+                    type="submit"
+                    className={"w-fit"}
+                    size={"lg"}
+                  >
+                    {form.formState.isSubmitting && (
+                      <HugeiconsIcon
+                        icon={LoaderPinwheelIcon}
+                        className="size-5 animate-spin"
+                      />
+                    )}
                     {t("form.fields.submit")}
                   </Button>
                 </FieldGroup>
@@ -165,6 +200,13 @@ const LeadForm = () => {
           </Card>
         </FadeUp>
       </div>
+
+      {/* Success Dialog */}
+      <SuccessDialog
+        open={showSuccessDialog}
+        onOpenChange={setShowSuccessDialog}
+        locale={locale}
+      />
     </section>
   );
 };

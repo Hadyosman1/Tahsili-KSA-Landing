@@ -28,19 +28,12 @@ export default function HomePage() {
           ctaText={t("Hero.buttons.CTA")}
           secondaryCtaText={t("Hero.buttons.secondary")}
         />
-        {/* <div className="container flex gap-2 py-10">
-          <div className="bg-brand-dark-blue size-12" />
-          <div className="bg-brand-light-blue size-12" />
-          <div className="bg-brand-green size-12" />
-          <div className="bg-brand-gray size-12" />
-          <div className="bg-brand-white size-12 shadow" />
-        </div> */}
         <Statistics />
         <ProblemsAndSolutions />
         <Curriculum />
         <Journey />
-        <Features />
         <LeadForm />
+        <Features />
         <SuccessStory />
         <FAQs />
       </main>
