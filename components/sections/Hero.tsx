@@ -36,7 +36,7 @@ const Hero = ({
   };
 
   return (
-    <section className="relative grid min-h-[75vh] py-24">
+    <section className="relative grid min-h-[78vh] py-24">
       <Image
         src={heroPic}
         alt="Cover"
@@ -46,7 +46,7 @@ const Hero = ({
         sizes="100vw"
         className="z-[-2] object-cover"
       />
-      <div className="to-brand-dark-blue via-brand-light-blue from-brand-green/60 absolute inset-0 z-[-1] bg-linear-to-b opacity-50" />
+      <div className="to-brand-dark-blue via-brand-light-blue from-brand-green/60 absolute inset-0 z-[-1] bg-linear-to-b opacity-30" />
       <div className="container grid items-center">
         <div>
           <div className="text-background mx-auto max-w-4xl text-center text-balance">
@@ -73,7 +73,7 @@ const Hero = ({
                 size={"lg"}
                 variant="secondary"
                 className={
-                  "text-brand-white bg-brand-green hover:bg-brand-green/90  h-12 max-w-64 grow rounded-full text-lg font-semibold"
+                  "text-brand-white bg-brand-green hover:bg-brand-green/90 h-12 max-w-64 grow rounded-full text-lg font-semibold"
                 }
               >
                 {ctaText}
