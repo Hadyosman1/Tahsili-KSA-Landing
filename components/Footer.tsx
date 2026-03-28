@@ -1,4 +1,4 @@
-import logo from "@/public/footer-logo.png";
+import logo from "@/public/logo.png";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
