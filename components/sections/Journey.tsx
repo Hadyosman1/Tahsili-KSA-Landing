@@ -68,12 +68,8 @@ const Journey = () => {
               <h2 className="text-brand-dark-blue mx-auto text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
                 {t("title")}
               </h2>
-              <p className="text-brand-gray text-lg leading-8">
+              <p className="text-brand-gray text-lg leading-8 text-pretty">
                 {t("description")}
-              </p>
-
-              <p className="text-brand-gray text-lg leading-7">
-                {t("beforeSteps")}
               </p>
             </div>
           </BlurIn>

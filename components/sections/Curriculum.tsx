@@ -2,16 +2,17 @@
 
 import { cn } from "@/lib/utils";
 import {
-  BookOpenTextIcon,
-  ChartAnalysisIcon,
-  MathIcon,
-  NoteDoneIcon,
-  PencilEdit01Icon,
+  Book02Icon,
+  HeadphonesIcon,
+  LanguageSkillIcon,
+  StrategyIcon,
   TimeManagementIcon,
+  UserGroupIcon,
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { useTranslations } from "next-intl";
 import { BlurIn, StaggerItem, StaggerList } from "../motion-wrappers";
+import { Badge } from "../ui/badge";
 import {
   Card,
   CardContent,
@@ -21,17 +22,21 @@ import {
 } from "../ui/card";
 
 const itemsIconsMap = [
-  MathIcon,
-  ChartAnalysisIcon,
-  BookOpenTextIcon,
-  PencilEdit01Icon,
+  HeadphonesIcon,
+  Book02Icon,
+  LanguageSkillIcon,
+  StrategyIcon,
   TimeManagementIcon,
-  NoteDoneIcon,
+  UserGroupIcon,
 ];
 
 const Curriculum = () => {
   const t = useTranslations("Curriculum");
-  const items = t.raw("items") as { title: string; description: string }[];
+  const items = t.raw("items") as {
+    week: string;
+    title: string;
+    description: string;
+  }[];
 
   return (
     <section id="curriculum">
@@ -52,8 +57,11 @@ const Curriculum = () => {
         >
           {items.map((item, idx) => (
             <StaggerItem key={idx} variant="fadeUp" className="grid">
-              <Card className="group relative transition-all duration-200 shadow-2xl hover:-translate-1">
-                <div className="from-brand-light-blue via-green-600 to-brand-light-blue bg-linear-to-r absolute bottom-0 left-0 h-1 w-full" />
+              <Card className="group relative shadow-2xl transition-all duration-200 hover:-translate-1">
+                <Badge className="absolute start-1 top-1 h-auto py-1">
+                  {item.week}
+                </Badge>
+                <div className="from-brand-light-blue to-brand-light-blue absolute bottom-0 left-0 h-1 w-full bg-linear-to-r via-green-600" />
                 <CardContent>
                   <CardHeader className="mb-3">
                     <div
@@ -67,11 +75,11 @@ const Curriculum = () => {
                         className="transition-all duration-400 group-hover:rotate-360"
                       />
                     </div>
-                    <CardTitle className="text-center text-brand-dark-blue font-bold">
+                    <CardTitle className="text-brand-dark-blue text-center font-bold">
                       {item.title}
                     </CardTitle>
                   </CardHeader>
-                  <CardDescription className="text-center leading-7 text-brand-gray font-semibold md:text-base">
+                  <CardDescription className="text-brand-gray text-center leading-7 font-semibold md:text-base">
                     {item.description}
                   </CardDescription>
                 </CardContent>

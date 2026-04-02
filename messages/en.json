@@ -40,67 +40,70 @@
   },
   "ProblemsAndSolutions": {
     "Problems": {
-      "Title": "Struggling with the Aptitude Test?",
-      "subTitle": "Many students study for hours, yet their results don’t reflect their effort.",
-      "beforeProblems": "Common reasons include:",
+      "Title": "The Problem: You took the STEP exam but didn’t achieve the score you wanted?",
+      "subTitle": "",
       "items": [
-        "Relying on scattered and unstructured materials",
-        "Lack of a clear study plan",
-        "Solving questions without understanding the thought process",
-        "Feeling stressed on test day"
+        "You’re not familiar with the actual test format and question types",
+        "You don’t have a clear and structured study plan",
+        "You feel your level is better than the score you got",
+        "Time ran out before you could finish all the questions"
       ]
     },
     "Solutions": {
-      "Title": "The Solution: Results-Oriented Preparation",
-      "subTitle": "Our program is a complete training system designed to help you develop all the skills needed for the aptitude test.",
-      "beforeSolutions": "You will get:",
+      "Title": "The Solution: STEP Program by Elm Way Academy",
+      "subTitle": "A program designed around the real exam structure to help you achieve your target score from the first attempt",
       "items": [
-        "A clear 30-day study plan",
-        "Live training sessions with expert instructors",
-        "Strategies to solve questions quickly and effectively",
-        "Mock exams that simulate the official test format"
+        "A clear weekly plan that covers every section in detail",
+        "Live sessions with instructors specialized specifically in STEP",
+        "Smart solving strategies to help you answer faster and more accurately without wasting time",
+        "Realistic mock exams to eliminate test anxiety before exam day"
       ]
     }
   },
   "Curriculum": {
-    "title": "What You’ll Learn in the Program",
-    "description": "The program covers all aptitude test skills in a practical and organized way.",
+    "title": "What You’ll Master in 4 Weeks",
+    "description": "Each week is focused on a core section, with intensive, hands-on training—no filler, just results.",
     "items": [
       {
-        "title": "Algebra & Geometry",
-        "description": "Understand equations and geometric shapes with simplified methods to solve questions efficiently."
+        "week": "Week 1",
+        "title": "Listening",
+        "description": "Intensive practice on understanding conversations and audio clips, with a focus on quickly identifying key information and adapting to different accents and speaking speeds."
       },
       {
-        "title": "Statistics & Data Analysis",
-        "description": "Work with tables, charts, and probabilities as they appear on the test."
-      },
-      {
+        "week": "Week 2",
         "title": "Reading Comprehension",
-        "description": "Learn techniques to read passages quickly and extract the correct answers."
+        "description": "Learn proven speed-reading techniques and how to pinpoint correct answers accurately without rereading passages multiple times."
       },
       {
-        "title": "Sentence Completion & Context",
-        "description": "Strategies to understand the meaning of sentences even if you don’t know all the words."
+        "week": "Week 3",
+        "title": "Grammar",
+        "description": "A comprehensive review of essential grammar rules, focusing on frequently tested patterns—explained in a practical way using real exam-style questions."
       },
       {
-        "title": "Time Management",
-        "description": "Learn to allocate your time wisely and avoid common mistakes during the test."
+        "week": "Week 4",
+        "title": "Mock Exams & Answering Strategies",
+        "description": "Full-length mock exams that replicate the real test in structure and timing, with instant feedback and detailed performance breakdowns."
       },
       {
-        "title": "Mock Exams",
-        "description": "Practice exams that mirror the official aptitude test experience."
+        "week": "Week 4",
+        "title": "Time Management & Test Tactics",
+        "description": "Smart strategies to help you maximize every minute in the exam and avoid common time-wasting traps."
+      },
+      {
+        "week": "Week 4",
+        "title": "Interactive Support Community",
+        "description": "Stay connected with instructors and peers throughout the program—get your questions answered quickly, even between sessions."
       }
     ]
   },
   "Journey": {
-    "title": "Your Personal Educational Advisor",
-    "description": "From the moment you enroll, a dedicated advisor will help you organize your study plan and track your progress.",
-    "beforeSteps": "Your program journey consists of four stages:",
+    "title": "A Personal Mentor Guiding You Every Step of the Way",
+    "description": "From day one, you’ll be connected with a dedicated academic mentor who assesses your current level, builds a personalized study plan tailored to your schedule and goals, and tracks your progress weekly to ensure you stay on the right path.",
     "steps": [
-      "Initial assessment of your current level",
-      "Designing a study plan tailored to your schedule",
-      "Weekly progress monitoring and adjustments",
-      "Continuous support until the test day"
+      "An initial assessment session to accurately evaluate your English level",
+      "A personalized study plan based on your schedule and target score",
+      "Weekly follow-ups to track and improve your performance",
+      "Continuous support all the way to your exam day"
     ]
   },
   "Features": {
