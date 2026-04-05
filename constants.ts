@@ -1,3 +1,5 @@
+export const WHATS_APP_NUMBER = "+966507924755";
+
 export const colorfulCards = [
   {
     cardBg: "bg-white",

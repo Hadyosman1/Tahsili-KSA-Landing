@@ -1,3 +1,5 @@
+import { Toaster } from "@/components/ui/sonner";
+import WhatsAppFloatedButton from "@/components/WhatsAppFloatedButton";
 import { DirectionProvider } from "@base-ui/react";
 import { Messages, NextIntlClientProvider } from "next-intl";
 import { Cairo } from "next/font/google";
@@ -9,7 +11,6 @@ import "./globals.css";
 // i18n
 import { routing } from "@/i18n/routing";
 import { hasLocale } from "next-intl";
-import { Toaster } from "@/components/ui/sonner";
 
 const cairo = Cairo({
   variable: "--font-cairo",
@@ -63,6 +64,7 @@ export default async function LocaleLayout({
           <DirectionProvider direction={locale === "ar" ? "rtl" : "ltr"}>
             {children}
             <Toaster duration={4000} richColors position="top-center" />
+            <WhatsAppFloatedButton />
           </DirectionProvider>
         </NextIntlClientProvider>
       </body>
