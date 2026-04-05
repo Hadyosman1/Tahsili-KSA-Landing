@@ -1,31 +1,31 @@
 {
   "Metadata": {
-    "title": "STEP Intensive Program | Full Coverage + Smart Strategies",
-    "description": "An intensive training program that fully covers all sections of the STEP exam, with smart solving strategies, realistic mock tests, and a personal mentor guiding you every step of the way."
+    "title": "Tahsili Intensive Program | Achieve Your Dream Major in Just One Month",
+    "description": "A comprehensive intensive program covering all Tahsili scientific subjects, featuring fast-solving strategies, realistic mock exams, and a personal mentor to guide you toward top results."
   },
   "Hero": {
-    "badge": "🟢 Registration is now open — Limited seats available",
-    "title": "Four Weeks with the STEP Program That Opens Doors to University, Scholarships, and Career Opportunities",
-    "description": "An intensive training program that fully covers all sections of the STEP exam, with smart solving strategies, realistic mock tests, and a personal mentor guiding you every step of the way.",
+    "badge": "🟢 Registration is Now Open — Limited Seats Available",
+    "title": "Tahsili Intensive Program… Fast-Track a Full Year of Prep in Just One Month and Secure Your Dream Major",
+    "description": "An intensive preparation program that fully covers all Tahsili scientific subjects, combining fast-solving techniques, realistic mock exams, and a dedicated personal mentor guiding you every step of the way.",
     "buttons": {
       "CTA": "Reserve Your Seat Now",
-      "secondary": "Explore the Course Content"
+      "secondary": "View Course Curriculum"
     }
   },
   "Statistics": {
-    "title": "Results That Speak for Our Students",
+    "title": "Numbers That Reflect Our Students’ Results",
     "items": [
       {
         "value": {
           "num": 90,
           "suffix": "%"
         },
-        "label": "Our Trainees’ Improvement Rate"
+        "label": "Average Improvement Rate"
       },
       {
         "value": {
-          "num": 4,
-          "suffix": "weeks"
+          "num": 30,
+          "suffix": "Days"
         },
         "label": "Intensive Training"
       },
@@ -40,59 +40,59 @@
   },
   "ProblemsAndSolutions": {
     "Problems": {
-      "Title": "The Problem: You took the STEP exam but didn’t achieve the score you wanted?",
-      "subTitle": "",
+      "Title": "The Problem: You Study Hard but See No Results? Worried About the Tahsili Exam?",
+      "subTitle": "Many students put in long hours of study… but their results don’t reflect their effort because:",
       "items": [
-        "You’re not familiar with the actual test format and question types",
-        "You don’t have a clear and structured study plan",
-        "You feel your level is better than the score you got",
-        "Time ran out before you could finish all the questions"
+        "The syllabus is overwhelming and you don’t know where to start",
+        "You study hard but without a clear strategy",
+        "Fear of missing your university admission distracts your focus",
+        "Test anxiety affects your actual performance"
       ]
     },
     "Solutions": {
-      "Title": "The Solution: STEP Program by Elm Way Academy",
-      "subTitle": "A program designed around the real exam structure to help you achieve your target score from the first attempt",
+      "Title": "The Solution: A Results-Driven Program",
+      "subTitle": "We designed this program as a complete system to help you boost your Tahsili score through:",
       "items": [
-        "A clear weekly plan that covers every section in detail",
-        "Live sessions with instructors specialized specifically in STEP",
-        "Smart solving strategies to help you answer faster and more accurately without wasting time",
-        "Realistic mock exams to eliminate test anxiety before exam day"
+        "A clear day-by-day study plan with a dedicated personal mentor",
+        "Live sessions with subject-matter experts who answer your questions instantly",
+        "Fast-solving techniques to help you tackle even the toughest questions with confidence",
+        "Realistic mock exams that eliminate test anxiety before the big day"
       ]
     }
   },
   "Curriculum": {
-    "title": "What You’ll Master in 4 Weeks",
-    "description": "Each week is focused on a core section, with intensive, hands-on training—no filler, just results.",
+    "title": "What You’ll Master in the Tahsili Prep Program",
+    "description": "A focused, high-impact review targeting the most frequently tested concepts—no fluff, no unnecessary theory.",
     "items": [
       {
-        "week": "Week 1",
-        "title": "Listening",
-        "description": "Intensive practice on understanding conversations and audio clips, with a focus on quickly identifying key information and adapting to different accents and speaking speeds."
+        "emoji": "➗",
+        "title": "Mathematics",
+        "description": "A comprehensive review of core concepts and the most frequently tested problem types in the Tahsili exam."
       },
       {
-        "week": "Week 2",
-        "title": "Reading Comprehension",
-        "description": "Learn proven speed-reading techniques and how to pinpoint correct answers accurately without rereading passages multiple times."
+        "emoji": "⚡",
+        "title": "Physics",
+        "description": "Key formulas and applications that commonly appear in the exam, with fast-solving strategies."
       },
       {
-        "week": "Week 3",
-        "title": "Grammar",
-        "description": "A comprehensive review of essential grammar rules, focusing on frequently tested patterns—explained in a practical way using real exam-style questions."
+        "emoji": "🧪",
+        "title": "Chemistry",
+        "description": "Essential equations, reactions, and core concepts explained in a way that helps you solve questions in seconds."
       },
       {
-        "week": "Week 4",
-        "title": "Mock Exams & Answering Strategies",
-        "description": "Full-length mock exams that replicate the real test in structure and timing, with instant feedback and detailed performance breakdowns."
+        "emoji": "🧬",
+        "title": "Biology",
+        "description": "High-frequency topics and how to accurately extract the correct answers from questions."
       },
       {
-        "week": "Week 4",
-        "title": "Time Management & Test Tactics",
-        "description": "Smart strategies to help you maximize every minute in the exam and avoid common time-wasting traps."
+        "emoji": "⏱️",
+        "title": "Time Management & Test Strategy",
+        "description": "A complete timing strategy for the exam and how to avoid common traps that cost you marks."
       },
       {
-        "week": "Week 4",
-        "title": "Interactive Support Community",
-        "description": "Stay connected with instructors and peers throughout the program—get your questions answered quickly, even between sessions."
+        "emoji": "🎯",
+        "title": "Realistic Qiyas-Style Mock Exams",
+        "description": "Full-length practice tests that simulate the real exam interface and pressure, so test day feels familiar."
       }
     ]
   },

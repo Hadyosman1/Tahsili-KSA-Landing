@@ -1,18 +1,8 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import {
-  Book02Icon,
-  HeadphonesIcon,
-  LanguageSkillIcon,
-  StrategyIcon,
-  TimeManagementIcon,
-  UserGroupIcon,
-} from "@hugeicons/core-free-icons";
-import { HugeiconsIcon } from "@hugeicons/react";
 import { useTranslations } from "next-intl";
 import { BlurIn, StaggerItem, StaggerList } from "../motion-wrappers";
-import { Badge } from "../ui/badge";
 import {
   Card,
   CardContent,
@@ -21,19 +11,10 @@ import {
   CardTitle,
 } from "../ui/card";
 
-const itemsIconsMap = [
-  HeadphonesIcon,
-  Book02Icon,
-  LanguageSkillIcon,
-  StrategyIcon,
-  TimeManagementIcon,
-  UserGroupIcon,
-];
-
 const Curriculum = () => {
   const t = useTranslations("Curriculum");
   const items = t.raw("items") as {
-    week: string;
+    emoji: string;
     title: string;
     description: string;
   }[];
@@ -58,22 +39,15 @@ const Curriculum = () => {
           {items.map((item, idx) => (
             <StaggerItem key={idx} variant="fadeUp" className="grid">
               <Card className="group relative shadow-2xl transition-all duration-200 hover:-translate-1">
-                <Badge className="absolute start-1 top-1 h-auto py-1">
-                  {item.week}
-                </Badge>
                 <div className="from-brand-light-blue to-brand-light-blue absolute bottom-0 left-0 h-1 w-full bg-linear-to-r via-green-600" />
                 <CardContent>
                   <CardHeader className="mb-3">
                     <div
                       className={cn(
-                        "bg-brand-light-blue/5 text-brand-light-blue mx-auto mb-2 grid w-fit place-items-center rounded-2xl p-2",
+                        "bg-brand-light-blue/5 mx-auto mb-2 grid w-fit place-items-center rounded-2xl p-2 text-4xl",
                       )}
                     >
-                      <HugeiconsIcon
-                        icon={itemsIconsMap[idx]}
-                        size={40}
-                        className="transition-all duration-400 group-hover:rotate-360"
-                      />
+                      {item.emoji}
                     </div>
                     <CardTitle className="text-brand-dark-blue text-center font-bold">
                       {item.title}
