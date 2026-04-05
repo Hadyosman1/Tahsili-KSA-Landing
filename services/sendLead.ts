@@ -1,5 +1,5 @@
 const API_URL = "https://prep.elmway.sa/send.php";
-const SOURCE = "برنامج STEP";
+const SOURCE = "برنامج التحصيلي";
 
 export const ERROR_CODES = {
   invalid_name: {

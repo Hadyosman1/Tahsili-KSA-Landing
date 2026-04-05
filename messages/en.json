@@ -97,33 +97,33 @@
     ]
   },
   "Journey": {
-    "title": "A Personal Mentor Guiding You Every Step of the Way",
-    "description": "From day one, you’ll be connected with a dedicated academic mentor who assesses your current level, builds a personalized study plan tailored to your schedule and goals, and tracks your progress weekly to ensure you stay on the right path.",
+    "title": "A Dedicated Academic Mentor by Your Side",
+    "description": "From the moment you enroll, you’ll be connected with a dedicated academic mentor who assesses your current level, builds a personalized study plan tailored to your schedule, and tracks your progress weekly to keep you on the right path.",
     "steps": [
-      "An initial assessment session to accurately evaluate your English level",
-      "A personalized study plan based on your schedule and target score",
-      "Weekly follow-ups to track and improve your performance",
-      "Continuous support all the way to your exam day"
+      "An initial assessment session to accurately evaluate your level",
+      "A personalized study plan tailored to your schedule",
+      "Weekly follow-ups to track and improve your progress",
+      "Continuous support all the way to exam day"
     ]
   },
   "Features": {
-    "title": "Why Students Choose Elm Way Program?",
+    "title": "Why Choose Elm Way’s Tahsili Program?",
     "items": [
       {
-        "title": "STEP-Specialized Instructors",
-        "subtitle": "Each instructor has over 5 years of experience training students for STEP and similar proficiency exams."
+        "title": "Live Interactive Sessions with Subject Experts",
+        "subtitle": "Join live classes led by specialists who answer your questions in real time—not just pre-recorded videos."
       },
       {
-        "title": "Full Session Recordings",
-        "subtitle": "Missed a session or want to review? Everything is recorded and available on the platform 24/7."
+        "title": "Downloadable Digital Resources",
+        "subtitle": "Access all materials and session recordings anytime, 24/7—review any lesson whenever you need."
       },
       {
-        "title": "Personalized Follow-Up",
-        "subtitle": "We continuously track your progress and focus specifically on your weak areas—you’re never left on your own."
+        "title": "Personalized Guidance",
+        "subtitle": "You’re never on your own—we track your progress and guide you toward the areas you need to improve."
       },
       {
-        "title": "Real Exam Simulation",
-        "subtitle": "Practice tests that match the real exam in format, content, and timing—so there are no surprises on test day."
+        "title": "Ambitious Student Community",
+        "subtitle": "Be part of a private community of driven students and expert instructors for continuous support."
       },
       {
         "title": "Flexible Payment Options",
@@ -131,7 +131,7 @@
       },
       {
         "title": "Free Retake Guarantee",
-        "subtitle": "If you complete the program and don’t achieve the desired improvement, you can retake the course for free."
+        "subtitle": "If you complete the program and don’t achieve the desired improvement, you can retake it for free."
       }
     ]
   },
@@ -139,28 +139,32 @@
     "title": "Frequently Asked Questions",
     "items": [
       {
-        "q": "Does the course guarantee a specific STEP score?",
-        "a": "The course is based on a proven methodology that has delivered real results, with improvement rates exceeding 80% for past trainees. Your results depend on your attendance, engagement, and practice."
+        "q": "Does the program guarantee a specific score?",
+        "a": "The program is built on a proven methodology that has delivered real results, with students achieving improvements of over 80%.\nYour outcome depends on your commitment to attending sessions and applying what you learn. From our side, we provide all the tools and personalized support to help you reach your best possible score."
       },
       {
-        "q": "Is the course online or in-person?",
-        "a": "Fully online… live interactive sessions with specialized instructors. All sessions are recorded and available on the platform for review."
+        "q": "Is the program suitable for both students and parents?",
+        "a": "Yes. Students benefit from the training and live sessions, while parents can track their child’s progress through regular updates from the academic mentor."
       },
       {
-        "q": "I’m a beginner or intermediate level. Is this course suitable for me?",
-        "a": "Yes. The course starts from the basics and gradually builds up. It’s designed to suit all levels and help every trainee achieve their best possible results."
+        "q": "Is the program online or in-person?",
+        "a": "The program is fully online via Zoom, with live interactive sessions led by specialists. All sessions are recorded so you can revisit them anytime."
       },
       {
-        "q": "I’ve taken the test before and got a low score. Will this course help me?",
-        "a": "Absolutely. Many of our trainees joined after unsatisfactory attempts and achieved significant improvement. We precisely diagnose your weaknesses and work on them intensively."
+        "q": "How long is the program?",
+        "a": "The program runs for 4 weeks, with intensive sessions held 4 times per week—structured to cover everything you need efficiently."
       },
       {
-        "q": "What if I miss a session?",
-        "a": "All sessions are recorded and available on the platform, so you can catch up at a time that suits you."
+        "q": "My child is at an intermediate level. Is the program suitable?",
+        "a": "Absolutely. The program starts from core concepts and builds progressively, making it suitable for both intermediate and advanced students."
       },
       {
-        "q": "Can I access the content after the course ends?",
-        "a": "Yes, all digital content and session recordings remain available on the platform, so you can revisit them anytime you need."
+        "q": "Can I access the content after the sessions end?",
+        "a": "Yes, all session recordings and digital materials remain available on the platform, so you can revisit them anytime."
+      },
+      {
+        "q": "Is there communication with instructors outside session times?",
+        "a": "Yes, dedicated communication channels are available. You can ask questions anytime between sessions and receive prompt support."
       }
     ]
   },
@@ -169,7 +173,7 @@
     "subtitle": "Many of our students have improved their aptitude test scores by over 80% after joining the program."
   },
   "LeadForm": {
-    "title": "Register Now and Start Your Journey to a Higher STEP Score",
+    "title": "Your Seat in Your Dream Major Starts Here",
     "subtitle": "Fill in your details and our team will contact you within 24 hours to build your study plan.",
     "form": {
       "footer": "🔒 Your information is secure and will not be shared with any third party.",

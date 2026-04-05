@@ -4,9 +4,9 @@ import { cn } from "@/lib/utils";
 import {
   ComputerVideoIcon,
   CreditCardValidationIcon,
-  TaskEdit02Icon,
+  LiveStreaming03Icon,
   UserCheck01Icon,
-  UserGroupIcon,
+  UserGroup03Icon,
   UserShield01Icon,
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
@@ -18,10 +18,10 @@ import { Card, CardContent, CardDescription, CardTitle } from "../ui/card";
 import featuresPic from "@/public/features.webp";
 
 const iconsMap = [
-  UserGroupIcon,
+  LiveStreaming03Icon,
   ComputerVideoIcon,
   UserCheck01Icon,
-  TaskEdit02Icon,
+  UserGroup03Icon,
   CreditCardValidationIcon,
   UserShield01Icon,
 ];
